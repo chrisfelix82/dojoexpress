@@ -1,0 +1,1 @@
+Add other Dojo libraries that you would like to use here.  e.g. dojox, dijit.  dojo is already included in node_modules
