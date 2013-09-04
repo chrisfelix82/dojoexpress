@@ -11,18 +11,18 @@ and I wanted to write the same code on the server side.  Amazingly I found the f
 
 Now I had the building blocks for dojoexpress!  Let's explore the project structure.
 
-1. app - This folder is accessible to both server and client side code.  Think of validation logic shared between client and sever - pretty cool stuff!
-2. app-client - This folder is only accessible to HTML clients (e.g. browser).  Think of it as your WebContent folder in a traditional web app
-3. app-server - This folder is accessible only on the server.  Think of it as your backend.
+1. shared - This folder is accessible to both server and client side code.  Think of validation logic shared between client and sever - pretty cool stuff!
+2. frontend - This folder is only accessible to HTML clients (e.g. browser).  Think of it as your WebContent folder in a traditional web app
+3. backend - This folder is accessible only on the server.  Think of it as your backend.
 4. js-lib - Add other js packages here.  For example, dijit, dojox etc. The dojo package in found under node_modules.  This folder is accessible to client and server.
 5. app.js - bootstraps the app.  This file sets up the dojo/node environment and starts an Express server with socket.io support on port 3434
 
 One thing that a backend needs is the ability to host RESTful services.  In a previous life I worked a lot with Java EE servers.
 I assume that many of you have also come from that not so distant past, and are familiar with Apache Wink.  If not, no biggy.
-All you need to know is that you define RESTful resources like so (see app-server/rest/Message.js):
+All you need to know is that you define RESTful resources like so (see backend/rest/Message.js):
 
 ```
-require(["dojo/_base/declare","app-server/global"],function(declare,global){
+require(["dojo/_base/declare","backend/global"],function(declare,global){
 	
 	var path = "/rest/message";
 	var app = global.app;
@@ -39,8 +39,8 @@ require(["dojo/_base/declare","app-server/global"],function(declare,global){
 
 ```
 
-The above should look familiar if you work with Express. "app-server/global" contains a pointer to the express server in "global.app".
-See app-server/server.js, where you have access to socket.io and the node sever itself:  
+The above should look familiar if you work with Express. "backend/global" contains a pointer to the express server in "global.app".
+See backend/server.js, where you have access to socket.io and the node sever itself:  
 
 ```
 global.app = app;
@@ -52,12 +52,12 @@ The above code is cool, because you are able to split up your RESTful services (
 any of your services as well through the use of global.io.
 
 Finally, like Apache Wink, you need to register your resources to be loaded on server startup.  To do this, you add the path to 
-app-server/rest/Resources.js.  For example:
+backend/rest/Resources.js.  For example:
 
 ```
 require([
-"app-server/rest/Message",   
-"app-server/rest/User"
+"backend/rest/Message",   
+"backend/rest/User"
 ]);
 ```
 
@@ -65,7 +65,7 @@ So by now you probably want to fire things up for a test spin.  To do this:
 
 1. Run node app.js
 2. Go to http://localhost:3434
-3. You will see Hello World! displayed.  This is coming from app-client/index.html. Congrats, you have tested file serving!
+3. You will see Hello World! displayed.  This is coming from frontend/index.html. Congrats, you have tested file serving!
 4. Go to http://localhost:3434/rest/message to test the GET message RESTful service.  You will see:
 
 ```
