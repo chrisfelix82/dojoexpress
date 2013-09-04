@@ -12,16 +12,16 @@ dojoConfig = {
     // explicit about our package map.
     packages: [
 	{
-		name: "app",
-		location: "app"
+		name: "shared",
+		location: "shared"
 	},
 	{
-		name: "app-client",
-		location: "app-client"
+		name: "frontend",
+		location: "frontend"
 	},
     {
-        name: "app-server",
-        location: "app-server"
+        name: "backend",
+        location: "backend"
     },
     {
         name: "node_modules",
@@ -36,7 +36,7 @@ dojoConfig = {
         location: "js-lib"
     }
     ],
-    deps: ["app-server/server"]
+    deps: ["backend/server"]
 };
  
 // Now load the Dojo loader
