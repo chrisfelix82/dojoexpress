@@ -1,40 +1,44 @@
 {
-  "name": "DojoExpress",
-  "version": "0.0.0",
-  "description": "A Node.js Express based server with Socket.io support.  It is based on dojo/node.",
-  "keywords": [
-    "dojo",
-    "express",
-    "socket.io",
-    "server",
-    "REST"
-  ],
-  "homepage": "https://github.com/chrisfelix82/dojoexpress",
-  "bugs": "https://github.com/chrisfelix82/dojoexpress/issues",
-  "author": {
-    "name": "Chris Felix",
-    "email": "chrisfelix82@gmail.com",
-    "url": "https://github.com/chrisfelix82"
-  },
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/chrisfelix82/dojoexpress.git"
-  },
-  "dependencies": {
-    "express": "~3.3.8",
-    "socket.io": "~0.9.16",
-    "mongoose": "~3.6.18",
-    "dojo": "~1.9.1"
-  },
-  "devDependencies": {},
-  "engines": {
-    "node": ">=0.8.0",
-    "npm": ">=1.2.10"
-  },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ]
+	"name": "DojoExpress",
+	"version": "0.1.0",
+	"description": "A Node.js Express based server with Socket.io support.  It is based on dojo/node.",
+	"keywords": ["dojo",
+	"express",
+	"socket.io",
+	"server",
+	"REST"],
+	"homepage": "https://github.com/chrisfelix82/dojoexpress",
+	"bugs": "https://github.com/chrisfelix82/dojoexpress/issues",
+	"author": {
+		"name": "Chris Felix",
+		"email": "chrisfelix82@gmail.com",
+		"url": "https://github.com/chrisfelix82"
+	},
+	"main": "app.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/chrisfelix82/dojoexpress.git"
+	},
+	"dependencies": {
+		"express": "~3.3.8",
+		"socket.io": "~0.9.16",
+		"mongoose": "~3.6.18",
+		"dojo": "~1.9.1"
+	},
+	"devDependencies": {
+		
+	},
+	"engines": {
+		"node": ">=0.8.0",
+		"npm": ">=1.2.10"
+	},
+	"licenses": [{
+		"type": "BSD",
+		"url": "https://github.com/dojo/dojo/blob/master/LICENSE#L13"
+	},
+	{
+		"type": "AFLv2.1",
+		"url": "https://github.com/dojo/dojo/blob/master/LICENSE#L43"
+	}],
+	"readmeFilename": "README.md"
 }
