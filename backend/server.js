@@ -9,7 +9,6 @@ require(["dojo/node!express","dojo/node!http","dojo/node!socket.io","backend/glo
 		 app.use(express.static(require.toUrl("shared")));
 		 app.use(express.static(require.toUrl("frontend")));
 		 app.use(express.static(require.toUrl("js-lib")));
-		 app.use(express.static(require.toUrl("node_modules")));
 	  });
 
 	server.listen(3434);

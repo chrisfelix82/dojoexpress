@@ -24,20 +24,16 @@ dojoConfig = {
         location: "backend"
     },
     {
-        name: "node_modules",
-        location: "node_modules"
-    },
-    {
         name: "dojo",
-        location: "node_modules/dojo"
+        location: "bower_components/dojo"
     },
     {
         name: "js-lib",
-        location: "js-lib"
+        location: "bower_components"
     }
     ],
     deps: ["backend/server"]
 };
  
 // Now load the Dojo loader
-require("./node_modules/dojo/dojo.js");
+require("./bower_components/dojo/dojo.js");
