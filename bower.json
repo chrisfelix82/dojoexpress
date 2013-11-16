@@ -5,7 +5,8 @@
         "dojo": "git://github.com/dojo/dojo.git#1.9.1",
         "dijit": "git://github.com/dojo/dijit.git#1.9.1",
         "dojox": "git://github.com/dojo/dojox.git#1.9.1",
-        "util": "git://github.com/dojo/util.git#1.9.1"
+        "util": "git://github.com/dojo/util.git#1.9.1",
+        "dcordova": "git://github.com/ibm-dojo/dcordova.git"
   }
 }
 
