@@ -14,7 +14,7 @@ Now I had the building blocks for dojoexpress!  Let's explore the project struct
 1. shared - This folder is accessible to both server and client side code.  Think of validation logic shared between client and sever - pretty cool stuff!
 2. frontend - This folder is only accessible to HTML clients (e.g. browser).  Think of it as your WebContent folder in a traditional web app
 3. backend - This folder is accessible only on the server.  Think of it as your backend.
-4. js-lib - Add other js packages here.  For example, dijit, dojox etc. The dojo package in found under node_modules.  This folder is accessible to client and server.
+4. bower_components - Add other js packages here.  For example, dijit, dojox etc. through bower.json.  Remember that you need to do a "bower install" to pull in those dependancies.
 5. app.js - bootstraps the app.  This file sets up the dojo/node environment and starts an Express server with socket.io support on port 3434
 
 One thing that a backend needs is the ability to host RESTful services.  In a previous life I worked a lot with Java EE servers.
