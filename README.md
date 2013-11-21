@@ -76,3 +76,8 @@ So by now you probably want to fire things up for a test spin.  To do this:
 ```
 
 Well that's about it.  Happy hacking!
+
+## Licensing
+
+This project is distributed by the Dojo Foundation and licensed under the ["New" BSD License](https://github.com/ibm-dojo/dcordova/blob/master/LICENSE).
+All contributions require a [Dojo Foundation CLA](http://dojofoundation.org/about/claForm).

@@ -1,6 +1,6 @@
 {
-	"name": "DojoExpress",
-	"version": "0.1.0",
+	"name": "dojo-express",
+	"version": "1.0",
 	"description": "A Node.js Express based server with Socket.io support.  It is based on dojo/node.",
 	"keywords": ["dojo",
 	"express",
